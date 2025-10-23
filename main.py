@@ -5,7 +5,7 @@ Demo Git workflow basic project
 """
 
 from calculator import Calculator, calculate_expression
-from utils import get_current_time, format_number, save_to_file, load_from_file
+from utils import get_current_time, format_number
 import config
 
 def demo_calculator():
@@ -22,13 +22,6 @@ def demo_utils():
     print(f"\nUtility Functions Demo:")
     print(f"Current Time: {get_current_time()}")
     print(f"Formatted Number: 1234567 -> {format_number(1234567)}")
-    
-    # Demo file operations
-    test_data = {"project": config.PROJECT_NAME, "timestamp": get_current_time()}
-    if save_to_file("test_data.json", test_data):
-        print("Data saved successfully")
-        loaded_data = load_from_file("test_data.json")
-        print(f"Loaded data: {loaded_data}")
 
 def show_config():
     """Show configuration info"""
