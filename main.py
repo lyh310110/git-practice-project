@@ -31,3 +31,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+echo "" >> main.py
+echo "# 故意引入的错误代码" >> main.py
+echo "undefined_function_call()" >> main.py
