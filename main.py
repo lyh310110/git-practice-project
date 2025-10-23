@@ -3,6 +3,11 @@
 Main program entry file
 Demo Git workflow basic project
 """
+import os
+import sys
+
+# 禁用字节码缓存
+sys.dont_write_bytecode = True
 
 from calculator import Calculator, calculate_expression
 from utils import get_current_time, format_number
