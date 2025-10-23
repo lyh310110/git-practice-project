@@ -1,32 +1,32 @@
 """
-计算器模块
-提供基本的数学运算功能
+Calculator Module
+Provides basic math operations
 """
 
 class Calculator:
-    """简单的计算器类"""
+    """Simple calculator class"""
     
     def add(self, a, b):
-        """加法运算"""
+        """Addition operation"""
         return a + b
     
     def subtract(self, a, b):
-        """减法运算"""
+        """Subtraction operation"""
         return a - b
     
     def multiply(self, a, b):
-        """乘法运算"""
+        """Multiplication operation"""
         return a * b
     
     def divide(self, a, b):
-        """除法运算"""
+        """Division operation"""
         if b == 0:
-            raise ValueError("除数不能为零")
+            raise ValueError("Cannot divide by zero")
         return a / b
 
 def calculate_expression(expression):
-    """计算字符串表达式（简单版本）"""
+    """Calculate string expression (simple version)"""
     try:
         return eval(expression)
     except Exception as e:
-        return f"计算错误: {e}"
+        return f"Calculation error: {e}"

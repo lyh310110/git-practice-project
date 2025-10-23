@@ -1,21 +1,21 @@
 """
-项目配置文件
-存储项目设置和常量
+Project Configuration File
+Store project settings and constants
 """
 
-# 项目配置
-PROJECT_NAME = "Git 实践项目"
+# Project configuration
+PROJECT_NAME = "Git Practice Project"
 VERSION = "1.0.0"
-AUTHOR = "开发者"
+AUTHOR = "Developer"
 DEBUG = True
 
-# 功能配置
+# Feature configuration
 CALCULATOR_SETTINGS = {
     "decimal_places": 2,
     "enable_history": True,
     "max_history_size": 10
 }
 
-# 文件配置
+# File configuration
 DATA_FILE = "data.json"
 LOG_FILE = "app.log"
